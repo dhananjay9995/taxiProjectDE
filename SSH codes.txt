@@ -1,0 +1,28 @@
+sudo apt-get update -y
+
+sudo apt update
+
+sudo apt install pyhton3-distutils
+sudo apt-get install python3-apt
+sudo apt-get install wget
+wget https://bootstrap.pypa.io/get-pip.py
+
+sudo python3 get-pip.py///.  sudo apt install python3-pip (for Debian systems)
+
+
+	The apt command is designed to consolidate and simplify many of the functionalities provided by both apt-get and apt-cache. Here’s a 		summary of how apt incorporates tasks from both: apt Combines apt-get and apt-cache
+
+	Package Management: apt can perform package installation, removal, and upgrades, just like apt-get.
+	Cache Management: apt can also handle some caching functionalities provided by apt-cache, such as searching for packages and showing package i	nformation.
+
+sudo apt install python3-venv
+python3 -m venv myenv
+source myenv/bin/activate
+
+	before installing any other packages which don't exist on the apt package management, create a virtual environment to install these and run 	the programs on them.
+
+pip install pandas
+
+	Deactivating a virtual environment is good practice as it prevents confusion with system packages, helps manage multiple projects, and keeps 	the terminal clean. Use deactivate to return to the system environment and maintain a clear workflow.
+
+deactivate
