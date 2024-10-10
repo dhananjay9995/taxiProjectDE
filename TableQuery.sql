@@ -1,7 +1,6 @@
 CREATE OR REPLACE TABLE caramel-brook-436419-s4.taxi_data_id.table_data AS (
 SELECT 
   f.VendorID,
-  -- Directly cast ISO 8601 datetime strings to DATETIME
   CAST(d.tpep_pickup_datetime AS DATETIME) AS tpep_pickup_datetime,
   CAST(d.tpep_dropoff_datetime AS DATETIME) AS tpep_dropoff_datetime,
   p.passenger_count,
